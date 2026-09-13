@@ -8,7 +8,7 @@ Technical talks are long. A three-hour conference recap is not useful when you a
 
 ## Two-minute demo
 
-[Watch the two-minute demo](YOUR_LOOM_OR_YOUTUBE_URL)
+[Watch the two-minute demo](https://youtu.be/4hTvmcfLxgc)
 
 The recording should show `/catchup` from the Slack modal through progress updates, the MP3 in the thread, **Listen** on Drive, and **Open Notes** in Notion.
 
