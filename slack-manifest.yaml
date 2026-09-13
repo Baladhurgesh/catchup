@@ -1,0 +1,42 @@
+display_information:
+  name: CatchUp
+  description: Turn YouTube talks into a short personalized podcast
+  background_color: "#1d1c1d"
+features:
+  app_home:
+    home_tab_enabled: true
+    messages_tab_enabled: true
+    messages_tab_read_only_enabled: false
+  bot_user:
+    display_name: CatchUp
+    always_online: true
+  slash_commands:
+    - command: /catchup
+      description: Turn YouTube talks into a short podcast
+      usage_hint: opens a form
+      should_escape: false
+  shortcuts:
+    - name: CatchUp
+      type: global
+      callback_id: catchup_open
+      description: Generate a podcast from YouTube talks
+oauth_config:
+  scopes:
+    bot:
+      - commands
+      - chat:write
+      - files:write
+      - app_mentions:read
+      - im:history
+      - im:write
+settings:
+  event_subscriptions:
+    bot_events:
+      - app_home_opened
+      - app_mention
+      - message.im
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false
